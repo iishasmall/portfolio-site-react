@@ -4,8 +4,15 @@
      font-size:15rem;
      color:$bgTextColor;
      line-height:1;
+     z-index:2;
+}
+
+.home-hello-text{
+    font-size:6rem;
+    z-index:3;
 }
 
 .name-txt{
     font-size:1.5rem;
+
 }

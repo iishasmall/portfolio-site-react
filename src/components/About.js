@@ -1,12 +1,12 @@
 import React from 'react';
 import { Component } from 'react';
-import { TweenMax, TimelineMax } from "gsap";
+import { TweenMax } from "gsap";
 
 
 class About extends Component {
   componentDidMount(callback) {
     const el = this.container;
-    TweenMax.fromTo(el, 0.3, { y: 100, opacity: 0 }, { y: -50, opacity: 1, onComplete: callback });
+    TweenMax.fromTo(el, 0.3, { y: 100, opacity: 0 }, { y: -50, opacity: .5, onComplete: callback });
   }
   render() {
     return (
