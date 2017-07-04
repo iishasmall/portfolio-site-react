@@ -8,6 +8,7 @@
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "create-react-app-sass": "^1.1.0",
     "gsap": "^1.20.1",
     "node-sass-chokidar": "0.0.3",
     "react-gsap-enhancer": "^0.3.0",
@@ -17,8 +18,8 @@
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts-with-sass start",
+    "build": "react-scripts-with-sass build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

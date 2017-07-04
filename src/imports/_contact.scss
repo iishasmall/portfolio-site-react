@@ -2,7 +2,7 @@
 
 .contact-bg-text{
 
-    font-size:21rem;
+    font-size:19rem;
      color:$bgTextColor;
      line-height:1;
 }
@@ -12,4 +12,14 @@
     font-family: 'open_sanslight', sans-serif;
     color:$bodyContentColor;
     z-index:3;
+}
+
+.contact-subhead {
+    font-family: 'open_sanssemibold', sans-serif;
+    font-size:3rem;
+    font-weight: normal;
+}
+
+.container-height{
+   height:10px;
 }

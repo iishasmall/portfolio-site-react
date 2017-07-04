@@ -92,25 +92,37 @@ a:visited {
 
 .home-bg-text {
   font-size: 15rem;
-  color: #0383f4;
+  color: rgba(3, 131, 244, 0.6);
   line-height: 1;
   z-index: 2; }
 
 .home-hello-text {
-  font-size: 6rem;
-  z-index: 3; }
+  font-size: 4.5rem; }
 
 .name-txt {
   font-size: 1.5rem; }
 
+.container-header {
+  z-index: 3; }
+
 .about-bg-text {
   font-size: 23rem;
-  color: #0383f4;
+  color: rgba(3, 131, 244, 0.6);
   line-height: 1; }
 
+.about-subhead {
+  font-family: 'open_sanssemibold', sans-serif;
+  font-size: 3rem;
+  font-weight: normal; }
+
+.about-content {
+  font-family: 'open_sansregular', sans-serif;
+  font-weight: normal;
+  width: 490px; }
+
 .contact-bg-text {
-  font-size: 21rem;
-  color: #0383f4;
+  font-size: 19rem;
+  color: rgba(3, 131, 244, 0.6);
   line-height: 1; }
 
 .email-text {
@@ -118,3 +130,11 @@ a:visited {
   font-family: 'open_sanslight', sans-serif;
   color: #ffffff;
   z-index: 3; }
+
+.contact-subhead {
+  font-family: 'open_sanssemibold', sans-serif;
+  font-size: 3rem;
+  font-weight: normal; }
+
+.container-height {
+  height: 10px; }
