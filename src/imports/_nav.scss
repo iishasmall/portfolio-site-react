@@ -14,3 +14,31 @@ a{
 a:visited{
    color:$linkColor; 
 }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav-container{
+    justify-content:flex-start;
+   
+    
+}
+
+.info-nav-container{
+    
+    
+}
+
+.info-nav{
+    display:inline-flex;
+    justify-items:space-between;
+}
+
+.info-nav li {
+    list-style:none;
+    justify-content: space-between;
+    padding-right: 15px;
+}

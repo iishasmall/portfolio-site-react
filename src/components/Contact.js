@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import { TweenMax } from "gsap";
+import { TweenMax } from 'gsap';
 
 
 class Contact extends Component {
@@ -35,7 +35,7 @@ class Contact extends Component {
                     <h2 ref={email => this.email = email} className="email-text">Email:iishasmall@gmail.com</h2>
                     <h2 ref={linkedin => this.linkedin = linkedin} className="email-text">LinkedIn:Iisha Small</h2>
                     <h2 ref={github => this.github = github} className="email-text">Github:github.com/iishasmall</h2>
-                    <h3 className="container-height" ref={textbg => this.textbg = textbg} className="contact-bg-text">Contact</h3>
+                    <h3 ref={textbg => this.textbg = textbg} className="contact-bg-text">Contact</h3>
                 </div>
 
             </div>

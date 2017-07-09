@@ -90,6 +90,23 @@ a {
 a:visited {
   color: #ffffff; }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.site-nav-container {
+  justify-content: flex-start; }
+
+.info-nav {
+  display: inline-flex;
+  justify-items: space-between; }
+
+.info-nav li {
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 15px; }
+
 .home-bg-text {
   font-size: 15rem;
   color: rgba(3, 131, 244, 0.6);
