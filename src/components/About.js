@@ -1,7 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import { TweenMax } from "gsap";
-
+import { mobileAnimation, desktopAnimation } from "./component-animations/AboutAnimations.js";
 
 class About extends Component {
   componentDidMount(callback) {
@@ -9,25 +8,16 @@ class About extends Component {
     const subhead = this.subhead;
     const bodyContent = this.bodyContent;
 
-    TweenMax.set(subhead, {
-      x: 80,
-      perspective: 800,
-      opacity: 0,
-      transformOrigin: "0px 50px",
-      transformStyle: "preserve-3d",
-      rotationX: -180
-    });
+    if (window.matchMedia("(max-width:375px)").matches) {
 
-    TweenMax.set(bodyContent, {
-      x: 80,
-      transformOrigin: "-50px 50px",
-      scale: 0,
-      opacity: 0
-    });
+      mobileAnimation(subhead, bodyContent, el);
 
-    TweenMax.fromTo(el, 0.3, { y: 100, opacity: 0 }, { y: -320, opacity: .5, onComplete: callback });
-    TweenMax.to(subhead, 1, { rotationX: 0, opacity: 1 });
-    TweenMax.to(bodyContent, .65, { scale: 1, opacity: 1, delay: .25 });
+    } else {
+
+      desktopAnimation(subhead, bodyContent, el);
+
+    }
+
   }
   render() {
     return (

@@ -17,4 +17,8 @@
     font-family: 'open_sansregular', sans-serif;
     font-weight:normal;
     width:490px;
+
+    @media (max-width:375px){
+        width:350px;
+    }
 }

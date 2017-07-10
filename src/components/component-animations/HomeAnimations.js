@@ -2,6 +2,7 @@
 
 import { TweenMax, Elastic } from "gsap";
 
+// MOBILE ANIMATION ===============
 
 export function mobileAnimation(text1, text2, text2a, text3, text3a, text3b) {
     TweenMax.set(text1, {
@@ -53,6 +54,7 @@ export function mobileAnimation(text1, text2, text2a, text3, text3a, text3b) {
     TweenMax.to(text3b, .5, { y: -203, opacity: 1, delay: 1.1 });
 }
 
+//DESKTOP ANIMATION =================
 
 export function desktopAnimation(text1, text2, text2a, text3, text3a, text3b) {
     TweenMax.set(text1, {

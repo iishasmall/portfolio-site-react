@@ -155,6 +155,9 @@ a:visited {
   font-family: 'open_sansregular', sans-serif;
   font-weight: normal;
   width: 490px; }
+  @media (max-width: 375px) {
+    .about-content {
+      width: 350px; } }
 
 .contact-bg-text {
   font-size: 19rem;
