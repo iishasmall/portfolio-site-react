@@ -9,8 +9,11 @@ import './App.css';
 
 class App extends Component {
 
+
+
     render() {
         return (
+
             < Router >
                 <div>
                     <div className="nav-container">
@@ -18,6 +21,7 @@ class App extends Component {
                             <nav className="nav-styling">
                                 <NavLink exact to="/">Home</NavLink>
                                 <NavLink to="/about">About</NavLink>
+                                <span><a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Work</a></span>
                                 <NavLink to="/contact">Contact</NavLink>
                             </nav>
                         </div>
@@ -25,9 +29,10 @@ class App extends Component {
                         <div className="info-nav-container">
 
                             <ul className="info-nav">
-                                <li><i className="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></li>
-                                <li><i className="fa fa-github fa-lg" aria-hidden="true"></i></li>
-                                <li><i className="fa fa-envelope fa-lg" aria-hidden="true"></i></li>
+
+                                <li><a href="https://www.linkedin.com/in/iisha-small-3689931/" target="_blank" rel="noopener noreferrer"> <i className="fa fa-linkedin-square fa-lg" aria-hidden="false"></i></a></li>
+                                <li><a href="https://github.com/iishasmall" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-lg" aria-hidden="false"></i></a></li>
+                                <li><a href="mailto:iishasmall@iishasmall.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-envelope fa-lg" aria-hidden="false"></i></a></li>
                             </ul>
                         </div>
                     </div>

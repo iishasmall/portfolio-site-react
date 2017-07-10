@@ -8,11 +8,11 @@ html {
 }
 
 body {
-    background-color:$backgroundColor;
+    
     font-family: 'open_sansbold', sans-serif;
     font-weight:bold;
     color:#ffffff;
-    
+    @include bgGradient();
 }
 
 
