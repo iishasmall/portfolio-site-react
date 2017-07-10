@@ -72,7 +72,8 @@
 html {
   height: 100%;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed; }
 
 body {
   font-family: 'open_sansbold', sans-serif;
@@ -130,6 +131,9 @@ a:visited {
 
 .home-hello-text {
   font-size: 4.5rem; }
+  @media (max-width: 375px) {
+    .home-hello-text {
+      font-size: 2.5rem; } }
 
 .name-txt {
   font-size: 1.5rem; }
