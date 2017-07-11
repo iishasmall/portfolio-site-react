@@ -1,7 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import { TweenMax } from 'gsap';
-
+import { mobileAnimation, desktopAnimation } from "./component-animations/ContactAnimations.js";
 
 class Contact extends Component {
 
@@ -11,19 +10,18 @@ class Contact extends Component {
         const linkedin = this.linkedin;
         const github = this.github;
         const subhead = this.subhead;
+        const textbg = this.textbg;
 
-        TweenMax.set(container, { x: -20, height: 10 });
-        TweenMax.set(email, { x: -100, y: 290, opacity: 0 });
-        TweenMax.set(linkedin, { x: -100, y: 260, opacity: 0 });
-        TweenMax.set(github, { x: -100, y: 235, opacity: 0 });
-        TweenMax.set(subhead, { x: 80, y: 200, opacity: 0 });
+        if (window.matchMedia("(max-width:375px)").matches) {
 
-        TweenMax.to(subhead, .5, { y: 20, opacity: 1 });
+            mobileAnimation(container, email, linkedin, github, subhead, textbg, callback);
 
-        TweenMax.fromTo(container, 0.3, { y: 300, opacity: 0 }, { y: -300, opacity: 1, onComplete: callback });
-        TweenMax.to(email, .5, { opacity: 1, x: 100, delay: .3 });
-        TweenMax.to(linkedin, .5, { opacity: 1, x: 100, delay: .45 });
-        TweenMax.to(github, .5, { opacity: 1, x: 100, delay: .65 });
+        } else {
+
+            desktopAnimation(container, email, linkedin, github, subhead, textbg, callback);
+
+        }
+
     }
 
     render() {
@@ -32,9 +30,9 @@ class Contact extends Component {
             <div>
                 <h1 ref={subhead => this.subhead = subhead} className="contact-subhead">Keep in touch</h1>
                 <div ref={c => this.container = c}>
-                    <h2 ref={email => this.email = email} className="email-text">Email:iishasmall@gmail.com</h2>
-                    <h2 ref={linkedin => this.linkedin = linkedin} className="email-text">LinkedIn:Iisha Small</h2>
-                    <h2 ref={github => this.github = github} className="email-text">Github:github.com/iishasmall</h2>
+                    <h2 ref={email => this.email = email} className="email-text"><a href="mailto:iishasmall@gmail.com" rel="noopener noreferrer">Email:iishasmall@gmail.com</a></h2>
+                    <h2 ref={linkedin => this.linkedin = linkedin} className="email-text"><a href="https://www.linkedin.com/in/iisha-small-3689931/" target="_blank" rel="noopener noreferrer">LinkedIn:Iisha Small</a></h2>
+                    <h2 ref={github => this.github = github} className="email-text"><a href="https://github.com/iishasmall" target="_blank" rel="noopener noreferrer">Github:github.com/iishasmall</a></h2>
                     <h3 ref={textbg => this.textbg = textbg} className="contact-bg-text">Contact</h3>
                 </div>
 
