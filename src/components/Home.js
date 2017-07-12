@@ -15,6 +15,11 @@ class Home extends Component {
         const text3a = this.text3a;
         const text3b = this.text3b;
 
+        const resize = () => {
+            console.log('resizing window');
+        }
+        window.onresize = resize;
+
         if (window.matchMedia("(max-width:375px)").matches) {
 
             mobileAnimation(text1, text2, text2a, text3, text3a, text3b);

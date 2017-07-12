@@ -73,12 +73,12 @@ export function desktopAnimation(text1, text2, text2a, text3, text3a, text3b) {
     });
     TweenMax.set(text2a, {
         x: 150,
-        y: -200,
+        y: -150,
         opacity: 0,
         zIndex: 4
     });
     TweenMax.set(text3, {
-        x: 215,
+        x: 220,
         y: 300,
         opacity: 0,
         zIndex: 4
@@ -101,8 +101,8 @@ export function desktopAnimation(text1, text2, text2a, text3, text3a, text3b) {
 
     TweenMax.to(text1, 1, { scale: 1, y: 10, opacity: 1, ease: Elastic.easeInOut });
     TweenMax.to(text2, .25, { y: -60, opacity: 1, delay: .7 });
-    TweenMax.to(text2a, .25, { y: -220, opacity: 1, delay: .8, });
-    TweenMax.to(text3, .5, { y: -380, opacity: 1, delay: .9 });
-    TweenMax.to(text3a, .5, { y: -540, opacity: 1, delay: 1 });
-    TweenMax.to(text3b, .5, { y: -699, opacity: 1, delay: 1.1 });
+    TweenMax.to(text2a, .25, { y: -200, opacity: 1, delay: .8, });
+    TweenMax.to(text3, .5, { y: -345, opacity: 1, delay: .9 });
+    TweenMax.to(text3a, .5, { y: -490, opacity: 1, delay: 1 });
+    TweenMax.to(text3b, .5, { y: -630, opacity: 1, delay: 1.1 });
 }

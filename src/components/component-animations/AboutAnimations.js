@@ -48,7 +48,7 @@ export function desktopAnimation(subhead, bodyContent, el) {
         opacity: 0
     });
 
-    TweenMax.fromTo(el, 0.3, { y: 100, opacity: 0 }, { y: -320, opacity: .5 });
+    TweenMax.fromTo(el, 0.3, { y: 100, opacity: 0 }, { y: -290, opacity: 1 });
     TweenMax.to(subhead, 1, { rotationX: 0, opacity: 1 });
     TweenMax.to(bodyContent, .65, { scale: 1, opacity: 1, delay: .25 });
 }

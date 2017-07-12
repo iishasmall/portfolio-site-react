@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
+
 import { mobileAnimation, desktopAnimation } from "./component-animations/AboutAnimations.js";
 
 class About extends Component {
@@ -17,6 +18,8 @@ class About extends Component {
       desktopAnimation(subhead, bodyContent, el);
 
     }
+
+
 
   }
   render() {

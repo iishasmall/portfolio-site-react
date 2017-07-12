@@ -5,10 +5,22 @@ import About from './components/About';
 import Home from './components/Home';
 import Contact from './components/Contact';
 
+
+
 import './App.css';
 
 class App extends Component {
 
+    componentDidMount() {
+
+        const resize = () => {
+            console.log('resizing window');
+        }
+        window.onresize = resize;
+
+
+
+    }
 
 
     render() {
@@ -40,8 +52,9 @@ class App extends Component {
                     <h2 className="name-txt">iisha small</h2>
 
                     <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
+
                 </div>
             </Router >
         )
@@ -49,5 +62,4 @@ class App extends Component {
 }
 
 
-
-export default App
+export default App;
