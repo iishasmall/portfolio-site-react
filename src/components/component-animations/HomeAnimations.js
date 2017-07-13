@@ -106,3 +106,10 @@ export function desktopAnimation(text1, text2, text2a, text3, text3a, text3b) {
     TweenMax.to(text3a, .5, { y: -490, opacity: 1, delay: 1 });
     TweenMax.to(text3b, .5, { y: -630, opacity: 1, delay: 1.1 });
 }
+
+
+//WINDOW RESIZE ANIMATION =================
+
+export function onResize(text1, text2, text2a, text3, text3a, text3b) {
+
+}

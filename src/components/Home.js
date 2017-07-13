@@ -35,12 +35,12 @@ class Home extends Component {
         return (
             <div>
 
-                <h2 ref={text1 => this.text1 = text1} className="home-hello-text">Hello</h2>
-                <h2 ref={text2 => this.text2 = text2} className="home-hello-text">I'm </h2>
-                <h2 ref={text2a => this.text2a = text2a} className="home-hello-text"> a</h2>
-                <h2 ref={text3 => this.text3 = text3} className="home-hello-text">Front</h2>
-                <h2 ref={text3a => this.text3a = text3a} className="home-hello-text">End</h2>
-                <h2 ref={text3b => this.text3b = text3b} className="home-hello-text">Developer</h2>
+                <h2 ref={text1 => this.text1 = text1} className="home-hello-text home-text1">Hello</h2>
+                <h2 ref={text2 => this.text2 = text2} className="home-hello-text home-text2">I'm </h2>
+                <h2 ref={text2a => this.text2a = text2a} className="home-hello-text home-text2a"> a</h2>
+                <h2 ref={text3 => this.text3 = text3} className="home-hello-text home-text3">Front</h2>
+                <h2 ref={text3a => this.text3a = text3a} className="home-hello-text home-text3a">End</h2>
+                <h2 ref={text3b => this.text3b = text3b} className="home-hello-text home-text3b">Developer</h2>
             </div >
         )
     }

@@ -19,7 +19,12 @@ class About extends Component {
 
     }
 
+    window.addEventListener("resize", resizeHandler);
 
+
+    function resizeHandler() {
+
+    }
 
   }
   render() {

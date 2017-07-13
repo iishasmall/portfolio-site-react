@@ -53,3 +53,5 @@ export function desktopAnimation(subhead, bodyContent, el) {
     TweenMax.to(bodyContent, .65, { scale: 1, opacity: 1, delay: .25 });
 }
 
+
+
